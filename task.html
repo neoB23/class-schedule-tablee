@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+        *{
+            padding:37px;
+            font-family: 'Sometype Mono', monospace;
+        }
+        body{
+            border-radius: 20px;
+            background-color: rgb(254, 250, 224);  
+            
+        }
+        th,td {  
+            padding:9px;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+            border-radius:7px; 
+        }
+        .table-container {
+           margin-left: 470px;
+           border-radius:12px;   
+        }
+        td:hover {
+        
+          background-color: rgb(212, 163, 115);  
+        }
+        table {
+            background-color: rgb(250, 237, 205);
+            border-radius:20px;
+        }
+        tbody {
+            background-color: white;
+        }
+        @media (max-width: 768px) {
+            .table-container {
+                margin-left: 0; 
+                overflow-x: auto;
+            }
+        }       
+    </style>  
+    <div class="table-container" >     
+        <table border="0">
+        <thead>
+            <tbody>
+                <tr>
+                    <th colspan="6" bgcolor="d4a373">BSIT CLASS SCHEDULE</th>
+                 </tr> 
+                <tr>   
+                    <th> TIME </th>
+                    <th> Monday </th>
+                    <th> Tuesday </th>
+                    <th> Wednesday </th>
+                    <th> Thursday </th>
+                    <th> Friday  </th>  
+                </tr>
+            <tr>
+                <td> 7:00</td>
+                <td rowspan="6"> Vacant Time </td>
+                <td rowspan="4"> Eng2 <br>7:00-10:30</br></td>
+                <td rowspan="2"> Vacant Time </td>
+                <td rowspan="4"> CW1 </td>
+                <td rowspan="4"> ITE6 </td>    
+            </tr>
+            <tr>
+                <td>8:00 </td>    
+            </tr>
+            <tr>
+                <td>9:00 </td>   
+                <td rowspan="4"> IT3</td> 
+            </tr>
+            <tr>
+                <td>10:00 </td>
+            </tr>
+            <tr>
+                <td>11:00 </td>
+                <td rowspan="2"> Vacant Time </td>
+                <td rowspan="2"> Vacant Time </td>
+                <td rowspan="2"> Vacant Time </td>
+            </tr>
+            <tr>
+                <td>12:00 </td>
+            </tr>
+            <tr>
+                <td>1:00 </td>
+                <td rowspan="2"> GE ELEC 2 <br> 1:00-2:30 </br> </td>
+                <td rowspan="2"> HIST 1</td>
+                <td rowspan="2"> GE ELEC 2</td>
+                <td rowspan="2"> HIST1</td>
+                <td rowspan="5"> ELEC1 </td>
+            </tr>
+            <tr>
+                <td>2:00 </td>
+            </tr>
+            <tr>
+                <td>3:00 </td>
+                <td rowspan="3"> PE3  </td>
+                <td rowspan="3"> WebDev</td>
+                <td rowspan="3"> Vacant Time </td>
+                <td rowspan="3"> Vacant Time </td>
+            </tr>
+            <tr>
+                <td>4:00 </td>
+            </tr>
+            <tr>
+                <td>5:00 </td>
+            </tr>
+        </tbody>
+        <tfoot> 
+            <tr>
+                <th colspan="6" bgcolor="d4a373"></th>
+            </tr>
+        </tfoot>
+        </thead> 
+    </table>
+</div>
+</body>
+</html>
